@@ -109,7 +109,7 @@ From the *root directory of this project directory*, run the following:
 - This functionality helps with verification of determinism and for development purposes. 
 
 #### 6b. Files
-- `snapshot.csv` - This file contains the Ethereum Address, EOS Key and EOS Balance of every address that registered correctly with the contract up to the configured period, and has a balance greater than the value set by `snapshot_minimum_balance` (default:1) 
+- `snapshot.csv` - This file contains the Ethereum Address, EOS Account Name, EOS Key and EOS Balance of every address that registered correctly with the contract up to the configured period, and has a balance greater than the value set by `snapshot_minimum_balance` (default:1) 
 - `snapshot-unregistered.csv` - This file contains the Ethereum Address and EOS Balance of every address that either failed to register or registered incorrectly with the crowdsale contract up to the configured period.
 - `distribution.csv` - This file includes the Ethereum Address and EOS balance of the entire distribution up to the configured period, with no rules or validation imposed. 
 - `snapshot.json` - This file contains information about the snapshot-session that created the above files. This file should not be used for verification, but can be used for debugging and to help identify indeterminism.
